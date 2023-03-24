@@ -5,36 +5,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Dashboard</title>
 </head>
 
 <body>
     <aside class="side-container">
-        <h1>Dashboard</h1>
+        <div class="header__logo">
+            <i class="fas fa-table"></i>
+            <h1>Dashboard</h1>
+        </div>
 
         <div class="dash-container">
             <div class="dash__main--container">
                 <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
+                    <li> <i class="fas fa-home"></i>Home</li>
+                    <li> <i class="fas fa-user"></i>Profile</li>
+                    <li> <i class="fas fa-envelope"></i>Messages</li>
+                    <li> <i class="fas fa-bell"></i>Notifications</li>
+                    <li> <i class="fas fa-clock"></i>History</li>
+                    <li> <i class="fas fa-folder"></i>Tasks</li>
+                    <li> <i class="fas fa-users"></i>Communities</li>
                 </ul>
             </div>
 
             <div class="dash__sub--container">
                 <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
+                    <li> <i class="fas fa-cog"></i>Settings</li>
+                    <li> <i class="fas fa-question"></i>Help</li>
+                    <li> <i class="fas fa-lock"></i>Privacy</li>
                 </ul>
             </div>
         </div>
     </aside>
+
+    <div class="main__content--container">
+        <div class="main__header--container">
+            <section>
+                <div class="main__header">
+                    <input type="text" placeholder="Search" class="search__bar">
+                    <div class="main__header--right">
+                        <i class="fas fa-bell"></i>
+                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section class="margin-bottom-0">
+                <div class="sub__header--container">
+                    <div class="user__container">
+                        <small>Hi there,</small>
+                        <h2>John Doe</h2>
+                    </div>
+                    <div class="header__buttons--container">
+                        <button class="btn btn--primary">New</button>
+                        <button class="btn btn--secondary">Upload</button>
+                        <button class="btn btn--tertiary">Share</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="main__body--container">
+            <h3>Your Projects</h3>
+            <div class="parent__grid">
+                <section>
+                    <div class="grid__container">
+                        <article>
+                            <h3>Project 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        </article>
+                        <article>
+                            <h3>Project 2</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        </article>
+                        <article>
+                            <h3>Project 3</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        </article>
+                        <article>
+                            <h3>Project 4</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        </article>
+                        <article>
+                            <h3>Project 5</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        </article>
+                        <article>
+                            <h3>Project 6</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="sub__right__grid--container">
+                        <div class="article">
+                            <h3>Project 1</h3>
+                            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 
