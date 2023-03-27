@@ -97,9 +97,8 @@ i {
 .main__header {
     margin-top: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 100px;
 }
 
 .main__header--right {
@@ -134,7 +133,24 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px;
+    padding: 0 20px;
+}
+
+
+.user__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 1em;
+}
+
+.image__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image__container img {
+    border-radius: 50%;
 }
 
 .header__buttons--container {
